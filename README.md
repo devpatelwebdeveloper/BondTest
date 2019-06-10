@@ -21,6 +21,14 @@
 - The cards are dynamically made in JavaScript.
 - Separated the components in Sass to make it easy to understand
 
+## Total time spent breakdown:
+
+### (Approximately as full project finished in around 4-5 hours)
+
+- Sass : 3 to 4 hours
+- html : 30 mins to 45 hr
+- JavaScript: 30 mins to 45 mins
+
 Live page link [BondTest- Devashish Patel](https://devpatelwebdeveloper.github.io/BondTest/)
 
 [Final Result of page](images/TaskFinalResult.jpg)
