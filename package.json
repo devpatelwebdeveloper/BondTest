@@ -1,0 +1,14 @@
+{
+  "name": "bondinterviewtest",
+  "version": "1.0.0",
+  "description": "Bond Interview Test",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Devashish Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

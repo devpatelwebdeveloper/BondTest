@@ -1,0 +1,76 @@
+// making this to utilize app.js unlimited addition
+.card-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px 10px;
+  @include respond(tab-port) {
+    width: 100% !important;
+  }
+}
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  background-color: $color-grey-light-2;
+  &__title {
+    height: 5rem;
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btn {
+    height: 5rem;
+    margin: auto;
+    padding: auto;
+  }
+
+  &__image {
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+    margin: auto;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  &__subtitle {
+    height: 5rem;
+    margin: auto;
+    padding: auto;
+  }
+  &__favourtie {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: auto;
+    @include respond(tab-port) {
+      top: 35%;
+      right: 35%;
+    }
+  }
+  &__new {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: auto;
+    @include respond(tab-port) {
+      top: -2rem;
+      right: -2rem;
+    }
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  @include respond(tab-port) {
+    background-color: $color-grey-light-2;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  }
+}

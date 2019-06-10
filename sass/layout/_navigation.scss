@@ -1,0 +1,55 @@
+#mainnav {
+  background: $color_white;
+  color: $color-blue-primary;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid $color-blue-primary;
+  #menu {
+    display: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+  }
+  ul {
+    display: block;
+    margin: 0;
+    text-align: center;
+    li {
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      a {
+        color: $color-blue-primary;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.9rem 1.5rem 0.8rem 1.5rem;
+        &:hover {
+          color: $color-black;
+          border-left: 0.2rem solid $color-blue-primary;
+          border-right: 0.2rem solid $color-blue-primary;
+        }
+      }
+    }
+  }
+}
+@include respond(tab-port) {
+  #mainnav {
+    #menu {
+      display: block;
+    }
+    ul {
+      display: none;
+      background: $color-white;
+      padding: 1em;
+      text-align: left;
+      li {
+        display: block;
+        a {
+          display: block;
+          padding: 0.75em 1.5em 0.5em 1.5em;
+        }
+      }
+    }
+  }
+}
