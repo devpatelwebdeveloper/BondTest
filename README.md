@@ -21,6 +21,6 @@
 - The cards are dynamically made in JavaScript.
 - Separated the components in Sass to make it easy to understand
 
-[Final Result of page](images/TaskFinalResult.jpg)
+Live page link [BondTest- Devashish Patel](https://devpatelwebdeveloper.github.io/BondTest/)
 
-#README
+[Final Result of page](images/TaskFinalResult.jpg)
